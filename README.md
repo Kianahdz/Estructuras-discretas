@@ -1,0 +1,3 @@
+-Hernández Garnica Kiana Valeska
+-Registro de actividades y de materiales de consulta utilizados para éstas.
+-The Glorious Glasgow Haskell Compilation System, version 9.14.1
