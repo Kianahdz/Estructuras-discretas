@@ -14,6 +14,3 @@ Familiarizarse cn el entorno de ghci y con la creación y ejecución de funcione
 
 No considero que tenga algún cometario relevante.
 
-## Commits
-
-![alt text](image-1.png)
