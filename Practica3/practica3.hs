@@ -57,7 +57,7 @@ primos xs = [x | x <- xs, esPrimo x]
 
 {-7.Funcion:coprimos
     Descripcion:recibe un entero x y devuelve una lista de los coprimos de x.
-    Uso:
+    Uso: coprimos 37 =[2,3,4,6,9,12,18,36]
 -}
 coprimos :: Int -> [Int]
 coprimos x = [y | y <- [1..x], (x `mod` y) == 1]
