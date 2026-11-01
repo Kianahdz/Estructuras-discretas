@@ -6,4 +6,4 @@ import Auxiliar
 -}
 a_entero:: Nat -> Int
 a_entero Cero = 0
-a_entero (S n) = 1 + a_entero n
+a_entero (S n) = 1 + a_entero n 
