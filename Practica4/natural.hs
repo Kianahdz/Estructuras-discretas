@@ -1,11 +1,13 @@
 import Auxiliar
-{-1.Funcion: a_natural
-    Descripcion: toma un número entero y lo lleva a su estructura de dato natural
-    Uso: a_natural 2 = S(S(Cero))
+
+{-2.Funcion: a_entero
+    Descripcion: toma un número natural y lo lleva a su valor entero
+    Uso: a_entero (Suc(Suc(Cero))) = 2
+         a_entero Cero = 0
 -}
-a_natural:: Int -> Nat
-a_natural 0 = Cero
-a_natural n = S(a_natural (n-1))
+a_entero:: Nat -> Int
+a_entero Cero = 0
+a_entero (S n) = 1 + a_entero n
 
 {-3.Funcion: potenciaNat
     Descripcion: toma un número natural y lo eleva a la potencia del segundo
@@ -22,3 +24,4 @@ potenciaNat n (S m) = multiplicacionNat n (potenciaNat n m)
 facNat:: Nat -> Nat
 facNat Cero = S Cero
 facNat (S n) = multiplicacionNat (S n) (facNat n)
+
