@@ -20,3 +20,6 @@ multiEnt (Suc n) (Neg m) = Neg (multiEnt (Suc n) m)
 multiEnt (Neg n) (Suc m) = Neg (multiEnt n (Suc m))
 multiEnt (Neg n) (Neg m) = multiEnt n m
 
+main:: IO ()
+main = print (multiEnt (Suc (Suc Zero)) (Neg (Suc Zero)))
+
